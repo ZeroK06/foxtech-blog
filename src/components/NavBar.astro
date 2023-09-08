@@ -1,0 +1,61 @@
+---
+import Wrapper from './Wrapper.astro'
+const menu = [
+  {
+    name: 'Noticias',
+    href: '/noticias',
+  },
+  {
+    name: 'Guias',
+    href: '/guias',
+  },
+  {
+    name: 'Resenas',
+    href: '/resenas',
+  },
+  ,
+  {
+    name: 'Recursos',
+    href: '/recursos',
+  },
+  {
+    name: 'Eventos',
+    href: '/eventos',
+  },
+  {
+    name: 'Zona Dev',
+    href: '/zonadev',
+  },
+]
+
+const socialLinks = [
+  {
+    name: 'Facebook',
+    href: '',
+    icon: '',
+  },
+]
+---
+
+<nav class="h-20">
+  <Wrapper>
+    <div class="flex flex-row h-full flex-nowrap justify-between items-center">
+      <a href="/">FoxTech</a>
+      <ul class="md:flex gap-6 hidden">
+        {
+          menu.map(item => (
+            <li>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <button class="px-6 py-2 rounded-full bg-primary text-white"
+        >Suscribirce</button
+      >
+    </div>
+  </Wrapper>
+</nav>

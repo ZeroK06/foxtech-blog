@@ -1,0 +1,10 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+interface wrapperProps extends HTMLAttributes<'div'> {}
+
+const propsWrapper: wrapperProps = Astro.props
+---
+
+<div class="w-full md:w-[90%] lg:w-[80%] m-auto px-2 h-full" {...propsWrapper}>
+  <slot />
+</div>
