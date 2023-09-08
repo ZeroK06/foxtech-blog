@@ -9,63 +9,80 @@ import Layout from '../layouts/Layout.astro'
     <NavBar />
     <Wrapper>
       <section
-        class="grid lg:grid-cols-8 lg:grid-rows-4 h-[calc(90vh-80px)] gap-4 py-10"
+        class="grid lg:grid-cols-8 lg:grid-rows-4 h-[calc(90vh-80px)] gap-4 py-10 break-words"
       >
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-1"
+          class="p-6 bg-black rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-1"
         >
-          Flexbox organiza diseño web.
+          <h3
+            class="text-4xl font-bold bg-clip-text bg-gradient-to-r from-white text-transparent to-white/20"
+          >
+            Flexbox organiza diseño web.
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-4"
+          class="p-6 bg-orange-500 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-4"
         >
-          Web 3.0 redefine la interacción.
+          <h3
+            class="text-7xl text-transparent bg-clip-text font-bold bg-gradient-to-b from-white to-white/30"
+          >
+            Innovación científica impulsa avances.
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-2"
+          class="p-6 bg-green-500 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-2"
         >
-          IA transforma la informática.
+          <h3
+            class="font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/30 text-5xl"
+          >
+            IA transforma la informatica
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-3"
+          class="bg-pink-500 p-6 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-3"
         >
-          SEO aumenta visibilidad online.
+          <h3
+            class="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30"
+          >
+            SEO aumenta visibilidad online.
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-3"
+          class="bg-yellow-300 p-6 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-3"
         >
-          JavaScript crea interactividad.
+          <h3 class="text-5xl font-bold">
+            <span class="text-white/90">JavaScript</span> crea interactividad.
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-1 row-span-2"
+          class="bg-cyan-400 p-4 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-1 row-span-2"
         >
-          Canvas crea gráficos interactivos.
+          <h1
+            class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-white/20"
+          >
+            Canvas crea gráficos interactivos.
+          </h1>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-1 row-span-2"
+          class="bg-purple-500 p-4 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-1 row-span-2"
         >
-          ORMs simplifican acceso datos.
+          <h3
+            class="text-transparent bg-clip-text bg-gradient-to-b font-bold text-3xl from-white to-white/30"
+          >
+            ORMs simplifican acceso datos.
+          </h3>
         </div>
         <div
-          class="bg-gray-100 rounded-2xl hover:scale-[0.98] duration-500 transition col-span-2 row-span-1"
+          class="bg-fuchsia-950 rounded-2xl p-4 hover:scale-[0.98] duration-500 transition col-span-2 row-span-1"
         >
-          Innovación científica impulsa avances.
+          <h3
+            class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-white/30"
+          >
+            Web 3.0 redefine la interacción.
+          </h3>
         </div>
       </section>
     </Wrapper>
   </header>
   <main></main>
 </Layout>
-
-<style is:global>
-  :root {
-    --primary: 260 68% 48%;
-  }
-
-  .text-primary {
-    color: hsl(var(--primary));
-  }
-  .bg-primary {
-    background-color: hsl(var(--primary));
-  }
-</style>

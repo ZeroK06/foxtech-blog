@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import NavBar from '../../components/NavBar.astro'
+import Wrapper from '../../components/Wrapper.astro'
+---
+
+<Layout title="Zone Dev">
+  <header class="bg-black min-h-screen">
+    <NavBar dark={true} />
+    <section
+      class="flex justify-center gap-10 items-center h-[calc(100vh-80px)] flex-col"
+    >
+      <h2 class="text-white text-center text-7xl">
+        <span>Developer</span>
+         Zone
+      </h2>
+      <div>
+        <input
+          type="text"
+          class="bg-transparent border-white/40 rounded-full outline-none focus:bg-white/10 transition px-6 py-4 border"
+        />
+      </div>
+    </section>
+  </header>
+</Layout>
